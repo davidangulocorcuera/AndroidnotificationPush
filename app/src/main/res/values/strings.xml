@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">pushExample</string>
+    <string name="channel_name">canal_uno</string>
+    <string name="channel_description">bonito canal</string>
+</resources>
