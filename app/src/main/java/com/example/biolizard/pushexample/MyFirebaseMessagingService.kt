@@ -21,6 +21,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         Log.v("token" , token)
     }
 
+   // Funcion que recibe el mensaje de firebase
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         if (remoteMessage.notification != null) {
 
@@ -30,7 +31,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         }
     }
-
+    // Funcion que crea una notificacion y recibe por parámetro el mensaje que devuelve firebase.
     fun createNotification(message: String) {
         val resultIntent = Intent(this, MainActivity::class.java)
         val resultPendingIntent: PendingIntent? = TaskStackBuilder.create(this).run {
